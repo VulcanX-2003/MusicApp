@@ -100,6 +100,7 @@ function NavigationList() {
     useMemo(
       () => [
         { href: "/", key: "term.home", name: "index" },
+        { href: "/ytmusic", key: "term.ytmusic", name: "Find Music" },
         ...displayedTabs.map((tabKey) => ({
           href: `/${tabKey}` satisfies Href,
           key: `term.${tabKey}s` satisfies ParseKeys,
@@ -148,7 +149,7 @@ function NavigationList() {
             <StyledText
               className={cn("text-sm", { "text-red": routeName === name })}
             >
-              {t(key).toLocaleUpperCase()}
+              {name.toLocaleUpperCase()}
             </StyledText>
           </Button>
         )}

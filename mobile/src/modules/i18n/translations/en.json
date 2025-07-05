@@ -32,7 +32,9 @@
     "upcoming": "Upcoming",
     "playingFrom": "Playing From",
 
-    "disc": "Disc {{count}}"
+    "disc": "Disc {{count}}",
+
+    "ytmusic": "YT Music"
   },
 
   "template": {

@@ -12,6 +12,7 @@ import { APP_VERSION } from "~/constants/Config";
 import * as LINKS from "~/constants/Links";
 import { List, ListItem } from "~/components/Containment/List";
 import { useSheetRef } from "~/components/Sheet";
+import MusicDirectorySetting from "../../components/Form/MusicDirectorySetting";
 
 /** Screen for `/setting` route. */
 export default function SettingScreen() {
@@ -120,6 +121,15 @@ export default function SettingScreen() {
             last
           />
         </List>
+        <List>
+          <ListItem
+            title="Music Download Directory"
+            description="Set where downloaded music is saved."
+            onPress={() => router.navigate("/setting/music-directory")}
+            first
+          />
+        </List>
+        <MusicDirectorySetting />
       </StandardScrollLayout>
     </>
   );

@@ -27,7 +27,8 @@
     "settings": "Ajusts",
     "upcoming": "Pròxima",
     "playingFrom": "Reproduint des de",
-    "disc": "Disc {{count}}"
+    "disc": "Disc {{count}}",
+    "ytmusic": "YT Music"
   },
   "template": {
     "entryAdded": "`{{- name}}` afegit.",
